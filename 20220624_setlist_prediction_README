@@ -1,0 +1,32 @@
+# Data description
+
+## model_v1
+### train_*.tsv, test_*.tsv
+* is_concert: 該首歌在此演唱會中有被演唱
+* pre.concert.dt: 演唱會日期
+* song_name_clean: 歌曲名稱	
+* stream_cnt: 該首歌在演唱會的前一個月累計播放量	
+* uniq_users	: 該首歌在演唱會的前一個月累計用戶量	
+* stream_cnt_ratio: stream_cnt/stream_cnt_total
+* uniq_users_ratio: uniq_users/uniq_users_total
+* stream_cnt_total: 該歌手在演唱會前一個月累計播放量	
+* uniq_users_total: 該歌手在演唱會前一個月累計用戶量	
+* days_diff_song_concert: 歌曲發行日期與演唱會日期差距
+
+
+
+## model_v2
+### concert_*_*.tsv
+* is_concert: 該首歌在此演唱會中有被演唱
+* song_name_clean: 歌曲名稱
+* uu.other: 該首歌在演唱會的前一個月，非粉絲的累計用戶量	
+* pc.other: 該首歌在演唱會的前一個月，非粉絲的累計播放量
+* avg.other: uu.other/pc.other
+* uu.core: 該首歌在演唱會的前一個月，粉絲的累計用戶量
+* pc.core: 該首歌在演唱會的前一個月，粉絲的累計播放量	
+* avg.core: c.core/uu.core
+* r: feature derived from columns above	
+* u: feature derived from columns above	
+* a: feature derived from columns above	
+
+
